@@ -1,0 +1,6 @@
+*.swp
+*.swo
+*~
+.build
+*vimsess
+home--tommy--mypy*
