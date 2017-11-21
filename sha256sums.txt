@@ -1,4 +1,3 @@
-3704d9fe8c4ab75fb9d634be672cdc31021943de22abe89a064715074aa5261c  generate-signatures.sh
 e7b3f7236fb485772d4cdeca01ba700f2194ae311419890da6de0525a6ee4f7b  home--tommy--mypy.tar.xz
 7c930a81b3075cd823fb70b1c0489ef44a0ea3c0b73215a65d555c55a2f92792  home--tommy--mypy.tar.xz.splitfile-aaa
 8d8547793e4d71e609176f89741b32a0e8eb752e9759994e720021cfd2cb0fe5  home--tommy--mypy.tar.xz.splitfile-aab
@@ -11,8 +10,5 @@ cc5da9863f4177b661bc052c9c6c334c731fe250381e5f0bce9cf4cdc28cb076  home--tommy--m
 187b246f1eeafee8426eeff84172813b75d9d8c02d80842dbda1b253c70e9a95  home--tommy--mypy.tar.xz.splitfile-aai
 a6c9d916ed4823cd1da97e14051b3f083d8f075ba4a88625025114725cafb9bc  home--tommy--mypy.tar.xz.splitfile-aaj
 278d8a7ee07fac02a3f8a5dd293f9eb17df75962350984f5d8574430baeefab6  home--tommy--mypy.tar.xz.splitfile-aak
-88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd  LICENSE
-b1f5c7f253993cc14f567f356807e599be3dcad0bcbc4c59c2eaf318b6f6cfb1  README.md
-e788c16d0775b458a620aaecd2ef7b43c0d22fd6c7bc359ac783f6dab7f82f9b  split-mypy.sh
 e873ea3fd0f990cbe9f6917a2a602e43a5e8b7afe638224c2dce2e328850c54f  usr--bin.tar.xz
 d0f17397d85dd2e1a066046d5f918d7536f511bd0d07492ed7e3f202e2e2b1fa  usr--lib--python2.7--site-packages.tar.xz
