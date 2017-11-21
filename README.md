@@ -78,10 +78,12 @@ backports.weakref==1.0.post1
 bleach==1.5.0
 certifi==2017.11.5
 chardet==3.0.4
+click==6.7
 coloredlogs==7.3
 configparser==3.5.0
 cycler==0.10.0
 Cython==0.27.3
+deap==1.0.2
 decorator==4.1.2
 docutils==0.14
 entrypoints==0.2.3
@@ -93,6 +95,12 @@ futures==3.1.1
 gdbn==0.1
 gnumpy==0.2
 graphviz==0.8.1
+h5browse==0.2
+h5config==0.3
+h5df==0.1.5
+h5json==1.1.0
+h5py==2.7.1
+h5py-wrapper==1.0.1
 html5lib==0.9999999
 humanfriendly==4.4.1
 idna==2.6
@@ -108,6 +116,7 @@ jsonschema==2.6.0
 jupyter-client==5.1.0
 jupyter-core==4.4.0
 Keras==2.0.9
+keras-datasets==0.1.0
 Lasagne==0.1
 lazy-object-proxy==1.3.1
 Markdown==2.6.9
@@ -143,6 +152,7 @@ Pygments==2.2.0
 pylint==1.7.4
 PyOpenGL==3.1.0
 pyparsing==2.2.0
+pyqtgraph==0.10.0
 pystan==2.17.0.0
 python-dateutil==2.6.1
 pytz==2017.3
