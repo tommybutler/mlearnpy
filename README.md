@@ -1,23 +1,41 @@
-# mlearnpy-linux
+# mlearnpy
 CentOS 7 / RHEL 7 machine learning setup with Python 2.7
 
 GPU support is not included, as this setup is tailored to a headless VM/bare metal server setup.
 
-This repository of utilities does not come with an installer.  Advanced knowledge of Linux is assumed.  It is also assumed you will know how to copy these files, where to put them, and how to use them--simply based on how they are named.  DO NOT blindly copy these over existing files.  If you don't know what you're doing, get help from a friend who does.
+# Prerequisites
+1. CentOS 7.4 x89_64 (previous versions of 7.x _*might*_ work as long as they're x86_64)
+1. Decent amount of Linux devops expertise, because this comes with nearly no documentation and a lot of precursory knowledge is assumed...
 
-After you've copied the files where they should obviously go, make a symlink to /home/tommy/mypy in your own homedir and...
+This repository of utilities does not come with an installer.  It is also assumed you will know how to copy these files, where to put them, and how to use them--simply based on how they are named.  DO NOT blindly copy these over existing files.  If you don't know what you're doing, get help from a friend who does.
 
+**MAKE NOTE! one of the .xz files is split in 40MB segments.  Cat it back together for use in the setup below.**
+
+# Setup
+1. Add this to your .bashrc
 ```bash
-# Don't mess up the order of these commands!  Just put these into your .bashrc so it runs on login.
-$ export WORKON_HOME=~/mypy/
-$ source /usr/bin/virtualenvwrapper.sh
-$ workon mypy
+# Python VirtualEnvWrapper
+if [[ -e /usr/local/bin/virtualenvwrapper.sh ]]
+then
+   export WORKON_HOME=~/python3
+   export VIRTUALENV_PYTHON=/usr/bin/python3
+   source /usr/local/bin/virtualenvwrapper.sh
+fi
 ```
+2. extract mypy archive to your homedir
+3. verify sha512 checksums and the gpg signature for the sha512sums.txt file
+4. configure virtualenvwrapper to use the mypy python installation
+5. make a symlink called /home/tommy and point it at your homedir (sorry, but that's how the custom python was compiled in this case)
+6. copy files from usr--bin.tar.xz to your /usr/bin directory (when in dobt, don't overwrite pre-existing files!)
+7. copy files from usr--lib--python2.7--site-packages.tar.xz to /usr/lib/python2.7/site-packages (when in doubt, don't overwrite!)
+8. optionally install the h5 rpm packages
 
-**MAKE NOTE! one of the .xz files is split in 40MB segments.  Cat it back together then extract it.**
+## Freezing (saving) your models...
+...Requires the h5 RPMs and their dependencies to be installed.  That list of rpm packages is found in the rpms subdirectory at the top of this repository's file tree.  `yum install` these packages, and see https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model for further details on saving your models.
 
 ## Packages included, listed in no particular order
 - cython
+- h5py, h5py-wrapper, h5json, h5config, h5browse, h5df
 - keras
 - lasagne
 - matplotlib
